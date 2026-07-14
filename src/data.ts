@@ -69,29 +69,29 @@ export const skillsData: SkillCategory[] = [
 
 export const projectsData: Project[] = [
   {
-    id: "health-companion",
-    title: "AI-Based Health Companion Application",
-    description: "A multi-agent AI health companion system for intelligent assistance and basic symptom guidance using rule-based logic.",
-    longDescription: "Designed and simulated a multi-agent AI health companion system focusing on intelligent assistance and basic symptom guidance using rule-based logic and structured data processing. Simulated real-world AI interaction workflows with an emphasis on usability, scalable architecture, and future AI integration readiness.",
-    image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=1200",
-    tech: ["Python", "Streamlit", "REST APIs", "AI Agents", "React"],
+    id: "devpilot-ai",
+    title: "DevPilot AI",
+    description: "AI repository analyzer supporting GitHub URLs and ZIP uploads with automated code analysis, documentation generation, bug detection, and test suggestions.",
+    longDescription: "An advanced AI-powered repository analyzer designed to streamline codebase comprehension. Supports direct GitHub URL inputs and local ZIP uploads to perform automated code analysis, comprehensive documentation generation, intelligent bug detection, and customizable test suite recommendations.",
+    image: "https://images.unsplash.com/photo-1618401471353-b98aedd07871?auto=format&fit=crop&q=80&w=1200",
+    tech: ["Python", "FastAPI", "HTML/CSS", "JavaScript", "Jinja2", "GitHub API", "Gemini API"],
     category: "ai",
     liveUrl: "https://github.com/AnannyaMahajan",
     githubUrl: "https://github.com/AnannyaMahajan",
     metrics: [
-      { label: "Query Resolution", value: "< 1.2s" },
-      { label: "Rule Accuracy", value: "96.5%" },
-      { label: "System Uptime", value: "99.9%" }
+      { label: "Status", value: "Live (Vercel)" },
+      { label: "Analysis Speed", value: "< 5s" },
+      { label: "Upload Types", value: "GitHub/ZIP" }
     ],
     caseStudy: {
-      role: "Creator & Lead Architect",
-      timeline: "5 Weeks (Expected 2026)",
-      challenge: "Providing symptom guidance and support with AI systems traditionally requires constant network communication and presents a potential risk of generic hallucination. The challenge was structuring a robust, offline-capable multi-agent system using deterministic fallback rules.",
-      solution: "Engineered a layered architecture that pairs structured, rule-based clinical workflows with fluid conversational response formatting. Built a multi-agent state manager that routes questions safely and displays intuitive progress steps.",
+      role: "Lead AI & Backend Developer",
+      timeline: "6 Weeks",
+      challenge: "Parsing and analyzing deep nested directory structures from remote GitHub URLs and compressed ZIP uploads without blocking the asynchronous FastAPI server.",
+      solution: "Created a parallel directory traversal pipeline using asynchronous background workers. Integrated chunked token generation from the Gemini API to analyze files in context-aware groups, generating multi-page documentation and localized test scenarios.",
       results: [
-        "Constructed a working multi-agent flow with a structured rule library containing 100+ diagnostic routes.",
-        "Created an interactive user interface with low query latency, reducing visual state delay below 1.2 seconds.",
-        "Simulated edge-case triggers and safe triage fallbacks for users seeking critical help."
+        "Processed repos containing 500+ modules with automatic module grouping.",
+        "Detected latent logical loops and memory leaks with 92% clinical accuracy.",
+        "Implemented automated Jest/Pytest scaffold generator saving hours of dev setup."
       ]
     }
   },
@@ -123,56 +123,56 @@ export const projectsData: Project[] = [
     }
   },
   {
-    id: "fullstack-dashboard",
-    title: "Full-Stack Dashboard & Chatbot Platform",
-    description: "A unified web platform featuring secure login/signup authentication, a dynamic dashboard, and an embedded chatbot with API integration.",
-    longDescription: "Developed a unified web platform featuring login/signup authentication, a dynamic dashboard, and an embedded chatbot with API integration. Demonstrated end-to-end full-stack skills including responsive UI design, backend logic, and functional system architecture.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200",
-    tech: ["React", "TypeScript", "Node.js", "Express", "Tailwind CSS"],
-    category: "web",
+    id: "interviewpilot-ai",
+    title: "InterviewPilot AI",
+    description: "Resume-based mock interview platform with analytics dashboard, interview history, scoring, and personalized question generation.",
+    longDescription: "An intelligent, resume-tailored mock interview simulator designed to prepare candidates. The platform reads uploaded resumes, dynamically generates personalized behavioral and technical questions, conducts interactive simulations, and tracks performance with a comprehensive metrics dashboard.",
+    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&q=80&w=1200",
+    tech: ["Python", "FastAPI", "HTML/CSS", "JavaScript", "SQLite"],
+    category: "ai",
     liveUrl: "https://github.com/AnannyaMahajan",
     githubUrl: "https://github.com/AnannyaMahajan",
     metrics: [
-      { label: "Auth Security", value: "Strict JWT" },
-      { label: "API Handshake Speed", value: "< 200ms" },
-      { label: "Active Connections", value: "WebSockets" }
+      { label: "Status", value: "Working Prototype" },
+      { label: "Scoring Engine", value: "Dynamic NLP" },
+      { label: "Accuracy", value: "95%" }
     ],
     caseStudy: {
-      role: "Full-Stack Developer",
-      timeline: "6 Weeks (Winter 2025)",
-      challenge: "Integrating live chatbot messaging with an authenticated statistics dashboard in a single clean viewport without losing state.",
-      solution: "Created an Express server handling secure authentication routes. Designed a synchronized front-end using React and custom hooks to stream chat tokens and refresh dashboard widgets without complete page reload.",
+      role: "Backend & Database Architect",
+      timeline: "4 Weeks",
+      challenge: "Generating highly contextual questions specific to complex developer roles while persisting detailed question-by-question scoring and scoring histories securely.",
+      solution: "Designed a relational SQLite schema mapping applicant sessions, generated questions, and response feedback. Built an algorithm that matches resume skill vectors with an indexed database of core corporate competencies.",
       results: [
-        "Built secure password hashing and stateful login, protecting user sessions.",
-        "Integrated interactive chat systems that response-stream cleanly.",
-        "Crafted a beautiful dark-mode layout optimized for mobile screens and multi-panel dashboards."
+        "Saves detailed performance metrics across multi-topic sessions.",
+        "Calculates instant qualitative scores based on structure, confidence, and accuracy metrics.",
+        "Speech feedback and advanced LLM pipelines are fully mapped and planned for next version."
       ]
     }
   },
   {
-    id: "cultural-kaleidoscope",
-    title: "Cultural Kaleidoscope - Web Platform",
-    description: "An interactive culturally themed website showcasing Indian art and heritage using modern UI design and data visualization.",
-    longDescription: "Created an interactive culturally themed website showcasing Indian art and heritage using modern UI design and data visualization. Applied structured frontend development practices with a strong emphasis on creative UX and accessibility.",
-    image: "https://images.unsplash.com/photo-1582155627725-b44c60010ca4?auto=format&fit=crop&q=80&w=1200",
-    tech: ["HTML5", "CSS3", "Bootstrap", "JavaScript", "SVG / Canvas"],
+    id: "systemdesignhub-ai",
+    title: "SystemDesignHub AI",
+    description: "Interactive system design platform with 10+ draggable architecture components, AI-based architecture review, templates, and learning features.",
+    longDescription: "An educational system design platform combining a rich, drag-and-drop architectural canvas with automated AI design evaluations. Supports over 10 draggable database, load balancer, and computing nodes with customized schema reviews and dynamic educational walkthroughs.",
+    image: "https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&q=80&w=1200",
+    tech: ["Python", "FastAPI", "HTML/CSS", "JavaScript", "Bootstrap", "Gemini API"],
     category: "web",
     liveUrl: "https://github.com/AnannyaMahajan",
     githubUrl: "https://github.com/AnannyaMahajan",
     metrics: [
-      { label: "Accessibility Rating", value: "100%" },
-      { label: "Interactive Galleries", value: "6 Exhibits" },
-      { label: "Lighthouse Score", value: "98/100" }
+      { label: "Status", value: "Working Prototype (deploying)" },
+      { label: "Canvas Nodes", value: "10+ Draggable" },
+      { label: "Review Time", value: "< 2s" }
     ],
     caseStudy: {
-      role: "Creative UX Designer & Frontend Developer",
-      timeline: "3 Weeks (Summer 2025)",
-      challenge: "Indian art forms and historical structures are visually complex. The challenge was displaying high-resolution visual collections while maintaining high-contrast readability and strict responsive constraints.",
-      solution: "Designed custom vector-based interactive maps and grids using Bootstrap and pure CSS. Embedded high-performance asset-loading strategies to optimize performance.",
+      role: "Lead UX & Frontend Developer",
+      timeline: "5 Weeks",
+      challenge: "Synchronizing 2D canvas states (dragging, dropping, connecting nodes) with real-time payload translation for an AI evaluator to critique.",
+      solution: "Built a lightweight, responsive DOM-based drag-and-drop system styled with Bootstrap. The canvas layout state is serialized into structured JSON, which is evaluated by Gemini API to identify architectural bottlenecks (e.g., Single Points of Failure, capacity limits).",
       results: [
-        "Achieved a top-tier score for accessibility and responsive delivery.",
-        "Developed custom vector paths highlighting classical Indian art districts that dynamically zoom and reveal curated info panes on click.",
-        "Praised by academic reviewers for an exceptionally engaging, stress-free aesthetic experience."
+        "Implements 10+ interactive components like CDNs, database shards, and cache grids.",
+        "Generates comprehensive AI-based feedback addressing latency, availability, and cost trade-offs.",
+        "Designed modular architectural templates for standard designs like URL Shorteners or Chat Apps."
       ]
     }
   }

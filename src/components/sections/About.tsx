@@ -1,9 +1,11 @@
+import { useState } from 'react';
 import { motion } from 'motion/react';
 import { experienceTimeline } from '../../data';
 import { Sparkles, Calendar, MapPin, Award } from 'lucide-react';
 
 export default function About() {
-  const portraitUrl = 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=600';
+  const [imgSrc, setImgSrc] = useState('/profile.jpg');
+  const fallbackUrl = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600';
 
   return (
     <section id="about" className="py-24 px-6 md:px-16 lg:px-24 bg-warm-white dark:bg-bg-dark-secondary select-none">
@@ -31,7 +33,12 @@ export default function About() {
             {/* Main picture card */}
             <div className="relative overflow-hidden rounded-2xl bg-white dark:bg-card-dark border border-black/5 dark:border-white/5 shadow-md">
               <img
-                src={portraitUrl}
+                src={imgSrc}
+                onError={() => {
+                  if (imgSrc !== fallbackUrl) {
+                    setImgSrc(fallbackUrl);
+                  }
+                }}
                 alt="Anannya Mahajan Portrait"
                 referrerPolicy="no-referrer"
                 className="w-full h-auto aspect-[4/5] object-cover group-hover:scale-105 filter grayscale hover:grayscale-0 transition-all duration-700"
@@ -42,7 +49,7 @@ export default function About() {
               {/* Location Badge */}
               <div className="absolute bottom-4 left-4 flex items-center gap-1.5 px-3 py-1.5 bg-black/70 backdrop-blur-md rounded-full text-[9px] font-mono text-white tracking-wider border border-white/10 uppercase">
                 <MapPin className="w-3 h-3 text-gold" />
-                Delhi, India
+                Nagpur, Maharashtra
               </div>
             </div>
 

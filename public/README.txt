@@ -1,0 +1,1 @@
+Upload your professional profile picture (name it "profile.jpg") to this folder. It will automatically load as your main portrait on the website's About section with 100% accurate styling and identity preservation!
